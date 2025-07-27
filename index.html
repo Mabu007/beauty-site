@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CZANE Nails & Beauty Studio - Your Beauty Destination</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7fafc; /* Light gray background */
+        }
+        /* Custom scrollbar for better aesthetics */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #d1d5db; /* Gray-300 */
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #9ca3af; /* Gray-400 */
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-gradient-to-r from-pink-400 to-purple-500 shadow-lg py-4 px-6 md:px-10 sticky top-0 z-50 rounded-b-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-white text-3xl font-bold tracking-wider rounded-lg p-2 hover:bg-white hover:text-pink-500 transition duration-300">CZANE Nails & Beauty Studio</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="text-white text-lg font-medium hover:text-pink-100 transition duration-300 rounded-md p-2">Home</a>
+                <a href="#services" class="text-white text-lg font-medium hover:text-pink-100 transition duration-300 rounded-md p-2">Services</a>
+                <a href="#gallery" class="text-white text-lg font-medium hover:text-pink-100 transition duration-300 rounded-md p-2">Gallery</a>
+                <a href="#about" class="text-white text-lg font-medium hover:text-pink-100 transition duration-300 rounded-md p-2">About Us</a>
+                <a href="#contact" class="text-white text-lg font-medium hover:text-pink-100 transition duration-300 rounded-md p-2">Contact</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-pink-400 rounded-b-lg mt-2">
+            <a href="#home" class="block text-white text-lg font-medium py-3 px-6 hover:bg-pink-500 transition duration-300 rounded-md">Home</a>
+            <a href="#services" class="block text-white text-lg font-medium py-3 px-6 hover:bg-pink-500 transition duration-300 rounded-md">Services</a>
+            <a href="#gallery" class="block text-white text-lg font-medium py-3 px-6 hover:bg-pink-500 transition duration-300 rounded-md">Gallery</a>
+            <a href="#about" class="block text-white text-lg font-medium py-3 px-6 hover:bg-pink-500 transition duration-300 rounded-md">About Us</a>
+            <a href="#contact" class="block text-white text-lg font-medium py-3 px-6 hover:bg-pink-500 transition duration-300 rounded-md">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative bg-cover bg-center h-screen flex items-center justify-center text-center p-6"
+        style="background-image: url('https://res.cloudinary.com/dlguuk8lt/image/upload/v1753627454/background_images_yp2j4j.jpg');">
+        <div class="absolute inset-0 bg-black opacity-50 rounded-lg"></div>
+        <div class="relative z-10 text-white max-w-3xl mx-auto bg-white bg-opacity-20 p-8 rounded-xl shadow-2xl backdrop-blur-sm">
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight drop-shadow-lg">
+                <span class="text-pink-300">CZANE Nails & Beauty Studio</span> <br> Your Ultimate Beauty Destination
+            </h1>
+            <p class="text-xl md:text-2xl mb-10 font-light drop-shadow-md">
+                Indulge in luxurious nail care, stunning designs, and a relaxing atmosphere.
+            </p>
+            <a href="#services" class="bg-pink-500 hover:bg-pink-600 text-white font-bold py-4 px-10 rounded-full text-xl shadow-lg transform hover:scale-105 transition duration-300 ease-in-out">
+                Explore Our Services
+            </a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white px-6 md:px-10 rounded-xl shadow-lg mx-auto my-12 max-w-6xl">
+        <div class="container mx-auto">
+            <h2 class="text-5xl font-extrabold text-center text-purple-600 mb-12">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Service Card 1: Nails (Acrylic) -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition duration-300 ease-in-out border border-pink-200">
+                    <h3 class="text-3xl font-bold text-pink-500 mb-4">Acrylic Nails</h3>
+                    <p class="text-lg text-gray-700 mb-6">
+                        Artificial nails or nail extensions placed over fingernails as fashion. We use powder and monomer to build them, or alternatively glue and dipping on the powder. Can also be applied to natural nails without extension. These are the strongest nails by far, requiring regular upkeep every two weeks, but can last up to about one month.
+                    </p>
+                </div>
+                <!-- Service Card 2: Nails (Gel Polish) -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition duration-300 ease-in-out border border-pink-200">
+                    <h3 class="text-3xl font-bold text-pink-500 mb-4">Gel Polish Nails</h3>
+                    <p class="text-lg text-gray-700 mb-6">
+                        Formed using build-up gel/base coat, Gel Polish, and top coat to get shiny nails. Fancy nails for special occasions, increasingly popular for manicures. We use quality products so that polish stays intact on the nails for at least a couple of weeks with shine and no cracking, peeling, or chipping. The process typically ends with the application of cuticle oil to all fingers to bring nourishment back into cuticles after harsh alcohol application.
+                    </p>
+                </div>
+                <!-- Service Card 3: Pedicure -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition duration-300 ease-in-out border border-pink-200">
+                    <h3 class="text-3xl font-bold text-pink-500 mb-4">Pedicure</h3>
+                    <p class="text-lg text-gray-700 mb-6">
+                        Our pedicure mostly includes relaxation, massage, treatment of feet and toenails. Dead skin cells are rubbed off the bottom of the feet using a rough stone. We use sanitized tools for each client, like all our services, and the process ends with massage, cuticle oil, nail polish, and moisturizing.
+                    </p>
+                </div>
+                <!-- Service Card 4: Make-Up -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition duration-300 ease-in-out border border-pink-200">
+                    <h3 class="text-3xl font-bold text-pink-500 mb-4">Make-Up</h3>
+                    <p class="text-lg text-gray-700 mb-6">
+                        Make-up for all occasions: Day Make-up, Evening Make-up, Glamour, Photography, Bridal, and any other occasion. Our make-up comes with strip lashes and is applied professionally, ensuring a flawless look made possible by the best face make-up artist in our studio.
+                    </p>
+                </div>
+                <!-- Service Card 5: Eyelash Extension -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition duration-300 ease-in-out border border-pink-200">
+                    <h3 class="text-3xl font-bold text-pink-500 mb-4">Eyelash Extension</h3>
+                    <p class="text-lg text-gray-700 mb-6">
+                        Our application is used to enhance the length, curliness, fullness, and thickness of natural eyelashes. We do individual lashes, where one lash is applied to each natural lash to create volume. We have different sizes to fit various natural lashes. We use quality products as eyes are sensitive. After each application, our clients receive a free instruction booklet and care mascara, applied professionally and hygienically by our Extentionist.
+                    </p>
+                </div>
+                <!-- Service Card 6: Massage (from services list in PDF) -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition duration-300 ease-in-out border border-pink-200">
+                    <h3 class="text-3xl font-bold text-pink-500 mb-4">Massage</h3>
+                    <p class="text-lg text-gray-700 mb-6">
+                        Indulge in our relaxing massage services designed to soothe your body and mind. 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-16 bg-gray-100 px-6 md:px-10 rounded-xl shadow-lg mx-auto my-12 max-w-6xl">
+        <div class="container mx-auto">
+            <h2 class="text-5xl font-extrabold text-center text-purple-600 mb-12">Our Gallery</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                <!-- Gallery Item 1: Acrylic Nails -->
+                <div class="relative group rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 ease-in-out">
+                    <img src="https://res.cloudinary.com/dlguuk8lt/image/upload/v1753627458/work2_byjq5m.jpg" alt="Acrylic Nails" class="w-full h-64 object-cover rounded-xl transform group-hover:scale-105 transition duration-300">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 rounded-xl">
+                        <p class="text-white text-xl font-semibold">Beautiful Acrylic Nails</p>
+                    </div>
+                </div>
+                <!-- Gallery Item 2: Gel Polish Nails -->
+                <div class="relative group rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 ease-in-out">
+                    <img src="https://res.cloudinary.com/dlguuk8lt/image/upload/v1753627459/working_oox6i5.jpg" alt="Gel Polish Nails" class="w-full h-64 object-cover rounded-xl transform group-hover:scale-105 transition duration-300">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 rounded-xl">
+                        <p class="text-white text-xl font-semibold">Shiny Gel Polish</p>
+                    </div>
+                </div>
+                <!-- Gallery Item 3: Pedicure -->
+                <div class="relative group rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 ease-in-out">
+                    <img src="https://res.cloudinary.com/dlguuk8lt/image/upload/v1753627455/nails_fmuvdp.jpg" alt="Pedicure" class="w-full h-64 object-cover rounded-xl transform group-hover:scale-105 transition duration-300">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 rounded-xl">
+                        <p class="text-white text-xl font-semibold">Relaxing Pedicure</p>
+                    </div>
+                </div>
+                <!-- Gallery Item 4: Make-Up -->
+                <div class="relative group rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 ease-in-out">
+                    <img src="https://res.cloudinary.com/dlguuk8lt/image/upload/v1753627456/make-up_imsrmv.jpg" alt="Make-Up" class="w-full h-64 object-cover rounded-xl transform group-hover:scale-105 transition duration-300">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 rounded-xl">
+                        <p class="text-white text-xl font-semibold">Professional Make-Up</p>
+                    </div>
+                </div>
+                <!-- Gallery Item 5: Eyelash Extension -->
+                <div class="relative group rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 ease-in-out">
+                    <img src="https://res.cloudinary.com/dlguuk8lt/image/upload/v1753627455/class_lidbqf.jpg" alt="Beauty Academy" class="w-full h-64 object-cover rounded-xl transform group-hover:scale-105 transition duration-300">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 rounded-xl">
+                        <p class="text-white text-xl font-semibold">Beauty Academy</p>
+                    </div>
+                </div>
+                <!-- Gallery Item 6: Staff/Studio -->
+                <div class="relative group rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 ease-in-out">
+                    <img src="https://res.cloudinary.com/dlguuk8lt/image/upload/v1753627455/group_bczsbi.jpg" alt="Our Studio" class="w-full h-64 object-cover rounded-xl transform group-hover:scale-105 transition duration-300">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 rounded-xl">
+                        <p class="text-white text-xl font-semibold">Our Professional Staff</p>
+                    </div>
+                </div>
+                <!-- Gallery Item 7: General Beauty -->
+                <div class="relative group rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 ease-in-out">
+                    <img src="https://res.cloudinary.com/dlguuk8lt/image/upload/v1753627457/team2_kkg0lf.jpg" alt="Beauty Care" class="w-full h-64 object-cover rounded-xl transform group-hover:scale-105 transition duration-300">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 rounded-xl">
+                        <p class="text-white text-xl font-semibold">Dedicated Beauty Care</p>
+                    </div>
+                </div>
+                <!-- Gallery Item 8: Nails -->
+                <div class="relative group rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 ease-in-out">
+                    <img src="https://res.cloudinary.com/dlguuk8lt/image/upload/v1753627456/our_services_p0rlfc.jpg" alt="Nails" class="w-full h-64 object-cover rounded-xl transform group-hover:scale-105 transition duration-300">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 rounded-xl">
+                        <p class="text-white text-xl font-semibold">Perfect Nails</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-16 bg-white px-6 md:px-10 rounded-xl shadow-lg mx-auto my-12 max-w-6xl">
+        <div class="container mx-auto flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2">
+                <img src="https://res.cloudinary.com/dlguuk8lt/image/upload/v1753627456/make-up_imsrmv.jpg" alt="About Us" class="rounded-xl shadow-xl w-full h-auto">
+            </div>
+            <div class="md:w-1/2 text-center md:text-left">
+                <h2 class="text-5xl font-extrabold text-purple-600 mb-8">About CZANE Nails & Beauty Studio</h2>
+                <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                    <span class="font-semibold text-pink-500">Czane</span> is a beauty studio mainly focused on the specific needs of beauty. Our purpose is to make our customers feel more confident, confident in themselves, and self-pride. In doing so, we serve with love, pride, and consistency, so our clients feel more welcome. We also do house calls for clients who have busy schedules, with just a call away, we will be at your doorstep. This makes us unique; we always put our clients first.
+                </p>
+                <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                    Czane Studio is based in Vosloorus Eastfield. The business started in 2019, but the company was registered in 2016. The company is owned by Zanele Moyo, Director and 100% South African Woman. "With the knowledge, qualifications, and experience in the beauty industry, I managed to bring the company into existence."
+                </p>
+                <h3 class="text-3xl font-bold text-pink-500 mb-4">Our Vision</h3>
+                <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                    It is our vision to be a studio where everyone feels comfortable and welcome. Our goal is that every client receives outstanding service from the time they walk in to the time they walk out.
+                </p>
+                <h3 class="text-3xl font-bold text-pink-500 mb-4">Our Mission</h3>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    To serve customers with integrity by being loyal and transparent to them, the company ourselves, to give consistently with a happy, relentless attitude while standing within an affordable budget for families.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-100 px-6 md:px-10 rounded-xl shadow-lg mx-auto my-12 max-w-6xl">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-extrabold text-center text-gray-800 mb-10">Get in Touch</h2>
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-1/2 bg-white p-8 rounded-xl shadow-xl border border-pink-200">
+                    <h3 class="text-3xl font-bold text-pink-500 mb-6">Our Location</h3>
+                    <p class="text-lg text-gray-700 mb-4">
+                        <span class="font-semibold">Address:</span> 12546 Lekabelane Street Ext 23 EastField Vosloorus
+                    </p>
+                    <p class="text-lg text-gray-700 mb-4">
+                        <span class="font-semibold">Contact:</span> <a href="tel:0793057899" class="text-blue-600 hover:underline">0793057899</a> | <a href="tel:0813969577" class="text-blue-600 hover:underline">0813969577</a>
+                    </p>
+                    <p class="text-lg text-gray-700 mb-6">
+                        <span class="font-semibold">E-mail:</span> <a href="mailto:czane5506@gmail.com" class="text-blue-600 hover:underline">czane5506@gmail.com</a>
+                    </p>
+                </div>
+
+                <div class="md:w-1/2 bg-white p-4 rounded-xl shadow-xl border border-pink-200 flex items-center justify-center">
+                    <div class="w-full h-80 bg-gray-200 rounded-lg overflow-hidden shadow-md">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3575.642055663702!2d28.261208075039263!3d-26.34751717700251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e951f28e2b9c7a5%3A0x6e3f4e1f7d4e3b7a!2sVosloorus%2C%20Boksburg!5e0!3m2!1sen!2sza!4v1709400000000!5m2!1sen!2sza"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-lg">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 px-6 md:px-10 rounded-t-lg mt-12">
+        <div class="container mx-auto text-center">
+            <p class="text-lg mb-4">&copy; 2025 CZANE Nails & Beauty Studio. All rights reserved.</p>
+            <p class="text-md text-gray-400">Reg: 2016/390172/07</p>
+            <div class="flex justify-center space-x-6 mt-4">
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300">Privacy Policy</a>
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu and Contact Form -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Mobile Menu Toggle
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+
+                // Close mobile menu when a link is clicked
+                mobileMenu.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                    });
+                });
+            }
+
+            // Smooth Scrolling for Navigation Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+
+            // Contact Form Submission (Basic Example)
+            const contactForm = document.getElementById('contact-form');
+            const formMessage = document.getElementById('form-message');
+
+            if (contactForm && formMessage) {
+                contactForm.addEventListener('submit', async (e) => {
+                    e.preventDefault(); // Prevent default form submission
+
+                    formMessage.classList.remove('hidden', 'text-green-600', 'text-red-600');
+                    formMessage.classList.add('text-blue-600');
+                    formMessage.textContent = 'Sending message...';
+                    formMessage.style.display = 'block'; // Ensure it's visible
+
+                    // Simulate API call
+                    try {
+                        // In a real application, you would send this data to a server
+                        // For example:
+                        // const response = await fetch('/api/contact', {
+                        //     method: 'POST',
+                        //     headers: {
+                        //         'Content-Type': 'application/json',
+                        //     },
+                        //     body: JSON.stringify({
+                        //         name: document.getElementById('name').value,
+                        //         email: document.getElementById('email').value,
+                        //         message: document.getElementById('message').value,
+                        //     }),
+                        // });
+                        // const result = await response.json();
+
+                        // For this example, we'll just simulate a delay
+                        await new Promise(resolve => setTimeout(resolve, 2000));
+
+                        // Simulate success or failure
+                        const success = Math.random() > 0.2; // 80% chance of success
+
+                        if (success) {
+                            formMessage.classList.remove('text-blue-600', 'text-red-600');
+                            formMessage.classList.add('text-green-600');
+                            formMessage.textContent = 'Message sent successfully! We will get back to you soon.';
+                            contactForm.reset(); // Clear the form
+                        } else {
+                            formMessage.classList.remove('text-blue-600', 'text-green-600');
+                            formMessage.classList.add('text-red-600');
+                            formMessage.textContent = 'Failed to send message. Please try again later.';
+                        }
+                    } catch (error) {
+                        console.error('Error sending message:', error);
+                        formMessage.classList.remove('text-blue-600', 'text-green-600');
+                        formMessage.classList.add('text-red-600');
+                        formMessage.textContent = 'An error occurred. Please try again.';
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
